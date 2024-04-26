@@ -31,7 +31,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**𝙃𝙄𝙄** ┈━═𝙈𝙮 𝙁𝙧𝙞𝙚𝙣𝙙═━┈😎\n\n I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram So Basically If You Want To Use Me First Send Me Hidden Command And Then Follow Few Steps..")
+    editable = await m.reply_text("**𝙃𝙄𝙄** ┈━═𝙈𝙮 𝙁𝙧𝙞𝙚𝙣𝙙═━┈😎\n\n I Am A Bot For Download Links From Your **.TXT** File And Then Upload That File Om Telegram /update .. BOT owner @sccwaleyarr ")
 
 
 @bot.on_message(filters.command("stop"))
@@ -100,7 +100,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("Now Enter A Caption to add caption on your uploaded file\n ex: ` @Sscwaleyarr `")
+    await editable.edit("Now Enter A Caption to add caption on your uploaded file\n ex: ` @Sccwaleyarr `")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
